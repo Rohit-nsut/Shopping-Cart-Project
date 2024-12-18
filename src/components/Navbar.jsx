@@ -10,10 +10,10 @@ export default function Navbar() {
   return (
     <div className='bg-slate-900 w-screen mx-auto'>
       
-      <nav className='max-w-6xl mx-auto flex justify-between py-3 items-center'>
+      <nav className='max-w-6xl xl:mx-auto mx-5 sm:mx-10 flex justify-between py-3 items-center'>
 
         <NavLink to="/">
-          <img src='https://codehelp-shopping-cart.netlify.app/logo.png' alt="logo" loading='lazy' width="170" height="170" />
+          <img src='https://codehelp-shopping-cart.netlify.app/logo.png' alt="logo" loading='lazy' className='sm:w-44 sm:h-14 w-32 h-12' />
         </NavLink>
 
         <div className='flex gap-6 justify-between items-center relative'>

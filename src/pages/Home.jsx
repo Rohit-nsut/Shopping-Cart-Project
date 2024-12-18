@@ -49,7 +49,7 @@ export default function Home() {
   return (
     <div className='w-screen'>
       
-      <div className='max-w-6xl flex flex-wrap mx-auto  my-12 justify-between gap-y-10'>
+      <div className='max-w-6xl xl:mx-auto mx-10 flex flex-wrap my-12 gap-x-5 justify-center gap-y-10'>
         
         {
           loading ? (<Spinner />) : (

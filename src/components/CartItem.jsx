@@ -18,12 +18,12 @@ export default function CartItem({item}) {
 
   return (
 
-      <div className='flex w-full py-10 gap-14 items-center px-5 border-b-2 border-gray-700'>
+      <div className='flex w-full gap-8 py-8 sm:flex-row flex-col lg:py-10 lg:gap-14 items-center lg:px-5 border-b-2 border-gray-700'>
 
-        <div className='h-56 w-72'>
+        <div className='sm:h-56 sm:w-72 h-96 w-80'>
           <img src={item.image} alt="item" loading='lazy' className='w-full h-full' />
         </div>
-        <div className='flex flex-col gap-4'>
+        <div className='flex flex-col sm:gap-4 px-8 sm:px-0'>
           <h1 className='text-gray-800 text-xl font-bold'> {item.title} </h1>
           <p className='text-lg text-gray-600'> {item.description.substring(0,82)+"..."} </p>
           <div className='flex justify-between items-center'>

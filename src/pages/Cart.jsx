@@ -19,16 +19,16 @@ export default function Cart() {
 
       {
         cart.length > 0 ?   
-        (<div className='flex max-w-6xl gap-20'>
+        (<div className='flex lg:flex-row flex-col py-4 sm:py-0  justify-center  max-w-6xl lg:px-2 lg:gap-20'>
 
-          <div className='flex flex-col w-[55%]'>
+          <div className='flex flex-col lg:mx-0 mx-14 lg:w-[55%] my-8 gap-10 lg:gap-0 lg:my-0'>
             {
               cart.map( (item,index) => (<CartItem key={item.id} item={item} itemIndex={index} />))
 
             }
           </div>
 
-          <div className='flex flex-col justify-between my-24'>
+          <div className='flex flex-col justify-between mx-20 sm:mx-14 sm:my-5 lg:mx-0  lg:my-24'>
           
             <div>
               <p className='text-2xl font-semibold text-green-800'>YOUR CART</p>
@@ -39,7 +39,7 @@ export default function Cart() {
             <div className='flex justify-between flex-col gap-5 w-full'>
               <p className='text-2xl text-gray-600 font-bold'>Total Amount:<span className='font-bold text-black text-2xl'> ${totalAmount}</span></p>
               <NavLink>
-                <button className='bg-green-700 py-4 px-36 rounded-lg text-white font-bold text-xl'>Checkout Now</button>
+                <button className='bg-green-700 lg:px-24 px-16 py-2 sm:px-12 sm:py-3 xl:px-36 rounded-lg text-white font-bold text-xl'>Checkout Now</button>
               </NavLink>
             </div>
             
